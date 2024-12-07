@@ -1,0 +1,51 @@
+@media print{ 
+    body{
+        background-color: #fff;
+        height: auto;
+        display: block;
+    }
+
+    header, footer{
+        position: static;
+        background: none;
+        color: black;
+        text-align: center;
+        page-break-after: avoid;
+    }
+
+    main{
+        overflow: visible;
+        margin: 0;
+        padding: 0;
+    }
+
+    .content{
+        box-shadow: none;
+        padding: 0;
+        page-break-inside: avoid;
+    }
+
+    p{ 
+        page-break-inside: avoid;
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2{
+        page-break-after: avoid;
+        counter-reset: #000;
+    }
+
+    /* 
+        orphans: define um número mínimo de linhas de um parágrafo que devem ser mantidas juntas no topo de uma página ao fazer uma quebra de página.
+        widows: define um número mínimo de linhas de um parágrafo que devem ser mantidas juntas no final de uma página ao fazer uma quebra de página.
+
+        page-break-inside: especifica como o navegador deve tratar as quebras de linhas dentro de um elemento. Pode ser usada para evitar quebrar páginas indesejadas dentro de elementos específicos.
+            - auto: Permite quebras de página dentro do elemento
+            - avoid: Evita quebras de página dentro do elmento
+        page-break-after: especifica como o navegador deve trartar as quebras de linhas após o elemento. Pode ser usada para evitar quebrar páginas após um elemento.
+            - auto: permite quebrar a página depois de um elemento conforme necessário
+            - always: sempre insere uma quebra de página após o elemento
+            - avoid : evita quebra de página após o elemento
+     */
+}
