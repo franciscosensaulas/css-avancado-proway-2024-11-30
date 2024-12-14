@@ -1,0 +1,42 @@
+body {
+  font-family: "Arial", "Helvitica", "sans-serif";
+  color: #3498db;
+  margin: 0;
+}
+
+header {
+  background-color: #3caf50;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main {
+  padding: 15px;
+  text-align: center;
+}
+
+button {
+  background-color: #3caf50;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  transform: background-color 0.3s ease;
+}
+button:hover {
+  background-color: rgb(46.9787234043, 137.0212765957, 62.6382978723);
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #333;
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  width: calc(100vw - 30px);
+}
+
+/*# sourceMappingURL=index.css.map */

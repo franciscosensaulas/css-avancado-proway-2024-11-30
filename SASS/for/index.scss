@@ -1,0 +1,42 @@
+@use "sass:color";
+
+$cores: #ff5733, #33ff57, #3357ff, #ff33a1, #f3ff33;
+$tamanhos: 10px, 50px, 100px, 200px, 250px;
+
+button {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease;
+
+    @for $i from 1 through length($cores) {
+        // Inicia um loop `@for` que vai de 1 até o tamaho da lista de cores (5 neste caso).
+        // Isso significa que o loop será executado uma vez para cada cor na lista
+
+        // Define a classe única para cada botão, como 'btn-1', 'btn-2', ...
+        // O indice do loop '$i' é interpolado dentro do nome da classe
+        &.btn-#{$i} {
+            // A função nth retorna o valor correspondente na lista de cores, naquela posição percorrida
+            background-color: nth($cores, $i);
+            width: nth($tamanhos, $i);
+            height: nth($tamanhos, $i);
+
+            @if($i ==5) {
+                color: black;
+            }
+
+            &:hover {
+                background-color: color.adjust(nth($cores, $i), $lightness: -10%);
+            }
+        }
+    }
+}
+
+// button.btn-1 {
+//     background-color: #ff5733;
+// }

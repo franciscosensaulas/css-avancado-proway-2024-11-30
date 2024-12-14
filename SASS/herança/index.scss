@@ -1,0 +1,34 @@
+
+@use "sass:color";
+
+$cor-sucesso: #28a745;
+$cor-erro: #dc3545;
+$cor-aviso: #ffc107;
+
+%mensagem-base { 
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid transparent;
+    color: white;
+    width: 500px;
+}
+
+.mensagem{
+    &.sucesso{
+        @extend %mensagem-base;
+        background-color: $cor-sucesso;
+        border-color: color.adjust($cor-sucesso, $lightness: -10%);
+    }
+    &.erro{
+        @extend %mensagem-base;
+        background-color: $cor-erro;
+        border-color: color.adjust($cor-erro, $lightness: -10%);
+    }
+    &.aviso{
+        @extend %mensagem-base;
+        background-color: $cor-aviso;
+        border-color: color.adjust($cor-aviso, $lightness: -10%);
+    }
+}

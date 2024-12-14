@@ -1,0 +1,24 @@
+.mensagem.aviso, .mensagem.erro, .mensagem.sucesso {
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  font-size: 16px;
+  border: 1px solid transparent;
+  color: white;
+  width: 500px;
+}
+
+.mensagem.sucesso {
+  background-color: #28a745;
+  border-color: rgb(30.1449275362, 125.8550724638, 52);
+}
+.mensagem.erro {
+  background-color: #dc3545;
+  border-color: rgb(189.2151898734, 32.7848101266, 47.7721518987);
+}
+.mensagem.aviso {
+  background-color: #ffc107;
+  border-color: rgb(211, 158.25, 0);
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,24 @@
+.mensagem.sucesso, .mensagem.erro, .mensagem.aviso{
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid transparent;
+    color: white;
+    width: 500px;
+}
+
+.mensagem.sucesso{
+    background-color: #28a745;
+    border-color: #1e7e34;
+}
+
+.mensagem.erro{
+    background-color: #dc3545;
+    border-color: #db2130;
+}
+
+.mensagem.aviso{
+    background-color: #ffc107;
+    border-color: #d39e00;
+}
